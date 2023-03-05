@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-03-04T15:24:23.730Z</updated>
+  <updated>2023-03-05T15:09:26.597Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2023/03/04/%E7%83%A6/"/>
     <id>http://example.com/2023/03/04/%E7%83%A6/</id>
     <published>2023-03-04T15:21:09.000Z</published>
-    <updated>2023-03-04T15:24:23.730Z</updated>
+    <updated>2023-03-05T15:09:26.597Z</updated>
     
     <content type="html"><![CDATA[<h1 id="学习好烦"><a href="#学习好烦" class="headerlink" title="学习好烦"></a>学习好烦</h1><ul><li>额</li></ul>]]></content>
     
@@ -36,6 +36,10 @@
     
     
     
+    <category term="日常" scheme="http://example.com/categories/%E6%97%A5%E5%B8%B8/"/>
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -44,20 +48,26 @@
     <link href="http://example.com/2023/03/01/%E5%89%8D%E8%A8%80/"/>
     <id>http://example.com/2023/03/01/%E5%89%8D%E8%A8%80/</id>
     <published>2023-03-01T14:28:51.000Z</published>
-    <updated>2023-03-04T15:05:12.986Z</updated>
+    <updated>2023-03-05T15:30:08.258Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="welcome"><a href="#welcome" class="headerlink" title="welcome"></a>welcome</h1><p>这是周一凡的博客</p><p>目前正在建立中</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="welcome"><a href="#welcome" class="headerlink" title="welcome"></a>welcome</h1><p>这是周一凡的博客</p><p>目前正在建立中</p><hr><ul><li><p>2023.3.5</p></li><li><p><mark>标签问题</mark>完善</p></li><li><p>要自己搭建博客可以参考以下网站</p></li><li><p><a href="hexo.io/zh-cn/">hexo</a></p></li><li><p><a href="https://nodejs.org/zh-cn/">Node.js官网</a></p></li><li><p><a href="git-scm.com">git</a></p></li><li><p>教程网站</p></li><li><p><a href="https://www.bilibili.com/video/BV1ts4y1f7Gu/?spm_id_from=333.880.my_history.page.click&vd_source=caad74fe119a4a777bb355555a86144f">【超详细！0成本搭建个人网站！！【建议收藏】</a></p></li></ul>]]></content>
     
     
       
       
     <summary type="html">&lt;h1 id=&quot;welcome&quot;&gt;&lt;a href=&quot;#welcome&quot; class=&quot;headerlink&quot; title=&quot;welcome&quot;&gt;&lt;/a&gt;welcome&lt;/h1&gt;&lt;p&gt;这是周一凡的博客&lt;/p&gt;
 &lt;p&gt;目前正在建立中&lt;/p&gt;
-</summary>
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;2023.</summary>
       
     
     
     
+    <category term="现在" scheme="http://example.com/categories/%E7%8E%B0%E5%9C%A8/"/>
+    
+    
+    <category term="前言" scheme="http://example.com/tags/%E5%89%8D%E8%A8%80/"/>
     
   </entry>
   
