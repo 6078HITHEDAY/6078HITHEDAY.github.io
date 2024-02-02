@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>myflycat</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2024-02-02T04:38:00.411Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>周一凡</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前言</title>
+    <link href="http://example.com/2024/02/02/%E5%89%8D%E8%A8%80/"/>
+    <id>http://example.com/2024/02/02/%E5%89%8D%E8%A8%80/</id>
+    <published>2024-02-02T04:19:49.000Z</published>
+    <updated>2024-02-02T04:38:00.411Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Welcome"><a href="#Welcome" class="headerlink" title="Welcome"></a>Welcome</h3><p>这是周一凡的博客<br>目前正在建立中</p><ul><li>2024.2.2 重新建站</li></ul><h2 id="2023-3-5"><a href="#2023-3-5" class="headerlink" title="2023.3.5"></a>2023.3.5</h2><p>标签问题完善</p><h2 id="2023-4-4"><a href="#2023-4-4" class="headerlink" title="2023.4.4"></a>2023.4.4</h2><ul><li>加入图片，使用GitHub图床加载较慢<br class='item-img' data-src='https://raw.githubusercontent.com/6078HITHEDAY/tc/main/undefined_image.png'><img src="https://raw.githubusercontent.com/6078HITHEDAY/tc/main/undefined_image.png" alt="try1"><br class='item-img' data-src='https://raw.githubusercontent.com/6078HITHEDAY/tc/main/RSTR_d8a135f809944e27e550954ebdb8b19f_image.png'><img src="https://raw.githubusercontent.com/6078HITHEDAY/tc/main/RSTR_d8a135f809944e27e550954ebdb8b19f_image.png" alt="try2"></li></ul><h2 id="音乐"><a href="#音乐" class="headerlink" title="音乐"></a>音乐</h2><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=1371757760&auto=1&height=66"></iframe>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;Welcome&quot;&gt;&lt;a href=&quot;#Welcome&quot; class=&quot;headerlink&quot; title=&quot;Welcome&quot;&gt;&lt;/a&gt;Welcome&lt;/h3&gt;&lt;p&gt;这是周一凡的博客&lt;br&gt;目前正在建立中&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2024.2.2 重新建站&lt;/li</summary>
+      
+    
+    
+    
+    <category term="前言" scheme="http://example.com/categories/%E5%89%8D%E8%A8%80/"/>
+    
+    
+    <category term="我" scheme="http://example.com/tags/%E6%88%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo</title>
+    <link href="http://example.com/2024/02/02/hexo/"/>
+    <id>http://example.com/2024/02/02/hexo/</id>
+    <published>2024-02-02T03:53:10.000Z</published>
+    <updated>2024-02-02T03:54:25.387Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="使用-Hexo-搭建静态博客"><a href="#使用-Hexo-搭建静态博客" class="headerlink" title="使用 Hexo 搭建静态博客"></a>使用 Hexo 搭建静态博客</h1><p>Hexo 是一个基于 Node.js 的静态博客框架，它能够将 Markdown 文件渲染成静态网页。在这篇文章中，我们将介绍如何使用 Hexo 搭建个人静态博客。</p><h2 id="安装-Node-js-和-Git"><a href="#安装-Node-js-和-Git" class="headerlink" title="安装 Node.js 和 Git"></a>安装 Node.js 和 Git</h2><p>首先，确保你的计算机上安装了 Node.js 和 Git。你可以从官方网站下载并安装它们：</p><ul><li><a href="https://nodejs.org/">Node.js</a></li><li><a href="https://git-scm.com/">Git</a></li></ul><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>打开终端（或命令提示符）并执行以下命令安装 Hexo：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">npm install -g hexo-cli<br></code></pre></td></tr></table></figure><h2 id="创建-Hexo-项目"><a href="#创建-Hexo-项目" class="headerlink" title="创建 Hexo 项目"></a>创建 Hexo 项目</h2><p>在你选择存放博客的目录下，执行以下命令创建 Hexo 项目：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo init myblog<br><span class="hljs-built_in">cd</span> myblog<br>npm install<br></code></pre></td></tr></table></figure><h2 id="编写博文"><a href="#编写博文" class="headerlink" title="编写博文"></a>编写博文</h2><p>在 Hexo 项目目录下，执行以下命令创建一篇新的博文：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">&quot;My First Post&quot;</span><br></code></pre></td></tr></table></figure><p>这将在 <code>source/_posts</code> 目录下创建一个 Markdown 文件，你可以用任何文本编辑器编辑这个文件。</p><h2 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h2><p>在 Hexo 项目目录下，执行以下命令启动本地服务器：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo server<br></code></pre></td></tr></table></figure><p>然后，在浏览器中打开 <code>http://localhost:4000</code>，你将看到你的博客在本地的预览。</p><h2 id="部署到远程仓库"><a href="#部署到远程仓库" class="headerlink" title="部署到远程仓库"></a>部署到远程仓库</h2><p>如果你希望将博客部署到远程仓库（例如 GitHub Pages），首先创建一个仓库，然后在 Hexo 项目配置文件 <code>_config.yml</code> 中修改 <code>deploy</code> 部分，配置好你的仓库信息。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">deploy:</span><br>  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span><br>  <span class="hljs-attr">repository:</span> <span class="hljs-string">&lt;your-repo-url&gt;</span><br>  <span class="hljs-attr">branch:</span> <span class="hljs-string">&lt;your-branch&gt;</span><br></code></pre></td></tr></table></figure><p>保存后，执行以下命令部署博客：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo deploy<br></code></pre></td></tr></table></figure><p>Hexo 将会将生成的静态文件推送到指定的远程仓库。</p><h2 id="主题和插件"><a href="#主题和插件" class="headerlink" title="主题和插件"></a>主题和插件</h2><p>Hexo 支持丰富的主题和插件。你可以在 <a href="https://hexo.io/themes/">Hexo 官方网站</a> 和 <a href="https://www.npmjs.com/">npm</a> 上找到并安装你喜欢的主题和插件。</p><p>如果您想了解更多关于 Hexo 的信息，您可以访问 <a href="%5E1%5E">Hexo 官网</a> 或 <a href="%5E2%5E">Hexo 中文网</a>。您也可以查看一些 Hexo 的教程，比如 <a href="%5E3%5E">Hexo 建站手册（详细教程）</a>、<a href="%5E4%5E">hexo史上最全搭建教程</a> 或 <a href="%5E5%5E">使用 Hexo+GitHub 搭建个人免费博客教程（小白向）</a>。希望这些资源对您有所帮助，祝您使用 Hexo 搭建个人博客顺利！👍</p><p>源: 与必应的对话， 2024&#x2F;2&#x2F;2<br>(1) Hexo. <a href="https://hexo.io/zh-cn/index.html">https://hexo.io/zh-cn/index.html</a>.<br>(2) Hexo. <a href="https://hexo.io/">https://hexo.io/</a>.<br>(3) 超详细 Hexo + Github Pages 博客搭建教程 - 知乎 - 知乎专栏. <a href="https://zhuanlan.zhihu.com/p/370635512">https://zhuanlan.zhihu.com/p/370635512</a>.<br>(4) hexo史上最全搭建教程-CSDN博客. <a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">https://blog.csdn.net/sinat_37781304/article/details/82729029</a>.<br>(5) 使用 Hexo+GitHub 搭建个人免费博客教程（小白向） - 知乎. <a href="https://zhuanlan.zhihu.com/p/60578464">https://zhuanlan.zhihu.com/p/60578464</a>.</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;使用-Hexo-搭建静态博客&quot;&gt;&lt;a href=&quot;#使用-Hexo-搭建静态博客&quot; class=&quot;headerlink&quot; title=&quot;使用 Hexo 搭建静态博客&quot;&gt;&lt;/a&gt;使用 Hexo 搭建静态博客&lt;/h1&gt;&lt;p&gt;Hexo 是一个基于 Node.js 的静态</summary>
+      
+    
+    
+    
+    <category term="介绍" scheme="http://example.com/categories/%E4%BB%8B%E7%BB%8D/"/>
+    
+    
+    <category term="hexo" scheme="http://example.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git介绍</title>
+    <link href="http://example.com/2024/02/02/git%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://example.com/2024/02/02/git%E4%BB%8B%E7%BB%8D/</id>
+    <published>2024-02-02T03:46:48.000Z</published>
+    <updated>2024-02-02T03:47:32.809Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Git-简介：从入门到精通"><a href="#Git-简介：从入门到精通" class="headerlink" title="Git 简介：从入门到精通"></a>Git 简介：从入门到精通</h1><p>Git是开发者日常工作中不可或缺的版本控制系统之一。它的强大而灵活的特性使得团队能够更加高效地合作，同时也为个人开发者提供了便捷的代码管理工具。本文将从基础概念到常用命令，一步步介绍Git的核心概念和使用方法。</p><h2 id="什么是-Git？"><a href="#什么是-Git？" class="headerlink" title="什么是 Git？"></a>什么是 Git？</h2><p>Git是一个分布式版本控制系统，它能够追踪文件的变化，协调多人协作，以及更轻松地管理项目的代码。与集中式版本控制系统（如SVN）不同，Git将整个代码仓库复制到每个开发者的本地，使得即使在离线状态下也能进行开发。</p><h2 id="Git-的核心概念"><a href="#Git-的核心概念" class="headerlink" title="Git 的核心概念"></a>Git 的核心概念</h2><ol><li><p><strong>仓库（Repository）：</strong> Git仓库是项目的根目录，包含所有的文件和子目录，以及一个隐藏的<code>.git</code>目录，它保存了版本历史和配置信息。</p></li><li><p><strong>工作区（Working Directory）：</strong> 工作区是你实际操作的目录，包含项目的实际文件。</p></li><li><p><strong>暂存区（Staging Area）：</strong> 暂存区是一个中间区域，用于暂时保存你的修改，使得你可以更精细地控制哪些修改被提交。</p></li><li><p><strong>提交（Commit）：</strong> 提交是将修改保存到仓库的操作。每次提交都有一个唯一的标识符，可以用来追溯和比较历史状态。</p></li><li><p><strong>分支（Branch）：</strong> 分支是独立的开发线，允许你同时处理多个任务或功能。主分支通常是<code>master</code>，而其他分支则是基于主分支创建的。</p></li></ol><h2 id="Git-基本操作"><a href="#Git-基本操作" class="headerlink" title="Git 基本操作"></a>Git 基本操作</h2><p>初始化仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git init<br></code></pre></td></tr></table></figure><p>克隆远程仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">clone</span> &lt;仓库地址&gt;<br></code></pre></td></tr></table></figure><p>查看文件状态</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git status<br></code></pre></td></tr></table></figure><p>将文件添加到暂存区</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git add &lt;文件名&gt;<br></code></pre></td></tr></table></figure><p>提交暂存区的修改</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git commit -m <span class="hljs-string">&quot;提交信息&quot;</span><br></code></pre></td></tr></table></figure><p>查看提交历史</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git <span class="hljs-built_in">log</span><br></code></pre></td></tr></table></figure><p>创建新分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git branch &lt;分支名&gt;<br></code></pre></td></tr></table></figure><p>切换分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git checkout &lt;分支名&gt;<br></code></pre></td></tr></table></figure><p>合并分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git merge &lt;分支名&gt;<br></code></pre></td></tr></table></figure><p>从远程仓库拉取修改</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git pull<br></code></pre></td></tr></table></figure><p>推送本地提交到远程仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git push<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Git-简介：从入门到精通&quot;&gt;&lt;a href=&quot;#Git-简介：从入门到精通&quot; class=&quot;headerlink&quot; title=&quot;Git 简介：从入门到精通&quot;&gt;&lt;/a&gt;Git 简介：从入门到精通&lt;/h1&gt;&lt;p&gt;Git是开发者日常工作中不可或缺的版本控制系统之一。</summary>
+      
+    
+    
+    
+    <category term="介绍" scheme="http://example.com/categories/%E4%BB%8B%E7%BB%8D/"/>
+    
+    
+    <category term="git" scheme="http://example.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>node.js介绍</title>
+    <link href="http://example.com/2024/02/02/node-js%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://example.com/2024/02/02/node-js%E4%BB%8B%E7%BB%8D/</id>
+    <published>2024-02-02T03:13:56.000Z</published>
+    <updated>2024-02-02T03:36:59.151Z</updated>
+    
+    <content type="html"><![CDATA[<p class='item-img' data-src='https://nodejs.org/static/images/logo.svg'><img src="https://nodejs.org/static/images/logo.svg" alt="Node.js"></p><h1 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h1><p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时环境，它可以让 JavaScript 代码在服务器端执行，从而实现高性能的网络应用开发。</p><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul><li><strong>事件驱动</strong>：Node.js 采用事件循环机制，使得 I&#x2F;O 操作非阻塞，提高了并发处理能力。</li><li><strong>单线程</strong>：Node.js 只有一个主线程，避免了多线程编程的复杂性，但也意味着无法充分利用多核 CPU。</li><li><strong>模块化</strong>：Node.js 使用 CommonJS 规范定义模块，通过 require 函数加载模块，通过 exports 对象导出模块。</li><li><strong>跨平台</strong>：Node.js 可以在 Windows, Linux, macOS 等多种操作系统上运行。</li></ul><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul><li><a href="https://juejin.cn/post/7227603054631600187">JavaScript Markdown 库 marked</a></li><li><a href="https://juejin.cn/post/6844903844816633863">[译] 化 Markdown 为 HTML：用 Node.js 和 Express 搭建接口</a></li><li><a href="https://blog.csdn.net/culiu9261/article/details/107546844">使用Node.js构建实时Markdown编辑器</a></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p class=&#39;item-img&#39; data-src=&#39;https://nodejs.org/static/images/logo.svg&#39;&gt;&lt;img src=&quot;https://nodejs.org/static/images/logo.svg&quot; alt=&quot;Node.js&quot;&gt;</summary>
+      
+    
+    
+    
+    <category term="介绍" scheme="http://example.com/categories/%E4%BB%8B%E7%BB%8D/"/>
+    
+    
+    <category term="node.js" scheme="http://example.com/tags/node-js/"/>
+    
+  </entry>
+  
+</feed>
