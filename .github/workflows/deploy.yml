@@ -8,7 +8,7 @@ on:
 env:
   GIT_USER: 6078HITHEDAY
   GIT_EMAIL: 88145214@qq.com
-  THEME_REPO: 6078HITHEDAY/hexo-theme-askers
+  THEME_REPO: Yue-plus/hexo-theme-arknights
   THEME_BRANCH: master
   DEPLOY_REPO: 6078HITHEDAY/6078HITHEDAY.github.io/
   DEPLOY_BRANCH: master
