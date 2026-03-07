@@ -1,16 +1,38 @@
-<!DOCTYPE html><html lang="en" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>git介绍 | myflycat</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+<!DOCTYPE html><html lang="en" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>git介绍 | myflycat</title><meta name="keywords" content="git"><meta name="description" content="Git 简介：从入门到精通Git是开发者日常工作中不可或缺的版本控制系统之一。它的强大而灵活的特性使得团队能够更加高效地合作，同时也为个人开发者提供了便捷的代码管理工具。本文将从基础概念到常用命令，一步步介绍Git的核心概念和使用方法。 什么是 Git？Git是一个分布式版本控制系统，它能够追踪文件的变化，协调多人协作，以及更轻松地管理项目的代码。与集中式版本控制系统（如SVN）不同，Git将整个">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git介绍">
+<meta property="og:url" content="http://example.com/2024/02/02/git%E4%BB%8B%E7%BB%8D/index.html">
+<meta property="og:site_name" content="myflycat">
+<meta property="og:description" content="Git 简介：从入门到精通Git是开发者日常工作中不可或缺的版本控制系统之一。它的强大而灵活的特性使得团队能够更加高效地合作，同时也为个人开发者提供了便捷的代码管理工具。本文将从基础概念到常用命令，一步步介绍Git的核心概念和使用方法。 什么是 Git？Git是一个分布式版本控制系统，它能够追踪文件的变化，协调多人协作，以及更轻松地管理项目的代码。与集中式版本控制系统（如SVN）不同，Git将整个">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-02-02T03:46:48.000Z">
+<meta property="article:modified_time" content="2024-06-29T15:36:12.000Z">
+<meta property="article:author" content="周一凡">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.woff2"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
   font-family: Bender;
   src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
 }
 @font-face {
   font-family: BenderLight;
-  src: local('BenderLight'), url("/font/BenderLight.ttf");
+  src: local('BenderLight'), url("/font/BenderLight.woff2") format('woff2');
 }
 @font-face {
   font-family: 'JetBrains Mono';
   src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
 }
-</style><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}}</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+</style><meta name="page-config" content="{&quot;code_fold&quot;:null}"><script class="pjax-js">var config = {"root":"/","code_fold":15,"search":{"preload":false,"activeHolder":"键入以继续","blurHolder":"数据检索","noResult":"无 $0 相关数据"},"code":{"codeInfo":"$0 - $1 行","copy":"复制"}};
+var page_config = {
+  code_fold: null
+};
+function updatePageConfig() {
+  var newPageConfig = document.querySelector('meta[name="page-config"]');
+  if (newPageConfig) {
+    page_config = JSON.parse(newPageConfig.content);
+  }
+}
+document.addEventListener('pjax:complete', function() { updatePageConfig(); });
+updatePageConfig();</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@11.12.2/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
  document.documentElement.setAttribute('theme-mode', 'light')
 if (window.localStorage.getItem('theme-mode') === 'dark')
  document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
@@ -23,8 +45,8 @@ if (window.localStorage.getItem('theme-mode') === 'dark')
 }</style><style>:root {
  --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
  --light-background: url('/img/bk.jpg');
- --theme-encrypt-confirm: 'confirm'
-}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+ --theme-encrypt-confirm: '确认'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@11.12.2/dist/mermaid.esm.min.mjs';
 window.mermaid = mermaid;
 code.paintMermaid();
 </script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
@@ -32,7 +54,7 @@ lightGallery(document.getElementById('post-bg'), {
   plugins: [lgZoom,lgThumbnail],
   selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
  cacheBust: false,
- selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.busuanzi'],
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.vercount','meta[name=page-config]'],
  switches: {'article': Pjax.switches.sideBySide},
  switchesOptions: {
    'article': {
@@ -44,11 +66,12 @@ lightGallery(document.getElementById('post-bg'), {
  }
 });
 document.addEventListener("pjax:complete", reset);reset()})</script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
-lightGallery(document.getElementById('post-bg'), {
+const postBg = document.querySelector('#post-bg');
+if (postBg) lightGallery(postBg, {
   plugins: [lgZoom,lgThumbnail],
   selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
  cacheBust: false,
- selectors: ['title','article','#aside-block','.pjax-js'],
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.vercount','meta[name=page-config]'],
  switches: {'article': Pjax.switches.sideBySide},
  switchesOptions: {
    'article': {
@@ -59,7 +82,7 @@ lightGallery(document.getElementById('post-bg'), {
    }
  }
 });
-document.addEventListener("pjax:complete", reset);reset()})</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>git介绍</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2024-02-02T03:46:48.000Z" id="date"> 2024-02-02</time></div></span><br><span>Last Update: <div class="control"><time datetime="1979-12-31T16:00:00.000Z" id="updated"> 1980-01-01</time></div></span></div></div><hr><div id="post-content"><h1 id="Git-简介：从入门到精通"><a href="#Git-简介：从入门到精通" class="headerlink" title="Git 简介：从入门到精通"></a>Git 简介：从入门到精通</h1><p>Git是开发者日常工作中不可或缺的版本控制系统之一。它的强大而灵活的特性使得团队能够更加高效地合作，同时也为个人开发者提供了便捷的代码管理工具。本文将从基础概念到常用命令，一步步介绍Git的核心概念和使用方法。</p>
+document.addEventListener("pjax:complete", reset);reset()})</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="数据检索" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>git介绍</h1><div id="post-info"><span>文章发布时间: <div class="control"><time datetime="2024-02-02T03:46:48.000Z" id="date"> 2024-02-02</time></div></span><br><span>最后更新时间: <div class="control"><time datetime="2024-06-29T15:36:12.000Z" id="updated"> 2024-06-29</time></div></span></div></div><hr><div id="post-content"><h1 id="Git-简介：从入门到精通"><a href="#Git-简介：从入门到精通" class="headerlink" title="Git 简介：从入门到精通"></a>Git 简介：从入门到精通</h1><p>Git是开发者日常工作中不可或缺的版本控制系统之一。它的强大而灵活的特性使得团队能够更加高效地合作，同时也为个人开发者提供了便捷的代码管理工具。本文将从基础概念到常用命令，一步步介绍Git的核心概念和使用方法。</p>
 <h2 id="什么是-Git？"><a href="#什么是-Git？" class="headerlink" title="什么是 Git？"></a>什么是 Git？</h2><p>Git是一个分布式版本控制系统，它能够追踪文件的变化，协调多人协作，以及更轻松地管理项目的代码。与集中式版本控制系统（如SVN）不同，Git将整个代码仓库复制到每个开发者的本地，使得即使在离线状态下也能进行开发。</p>
 <h2 id="Git-的核心概念"><a href="#Git-的核心概念" class="headerlink" title="Git 的核心概念"></a>Git 的核心概念</h2><ol>
 <li><p><strong>仓库（Repository）：</strong> Git仓库是项目的根目录，包含所有的文件和子目录，以及一个隐藏的<code>.git</code>目录，它保存了版本历史和配置信息。</p>
@@ -105,4 +128,4 @@ document.addEventListener("pjax:complete", reset);reset()})</script><meta name="
 
 <p>推送本地提交到远程仓库</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">git push<br></code></pre></td></tr></table></figure>
-<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2024/02/02/hexo/">← Next hexo</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2024/02/02/node-js%E4%BB%8B%E7%BB%8D/">node.js介绍 Prev →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="To Catalog">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">周一凡</a></h1><div id="description"><p></p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-%E7%AE%80%E4%BB%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A"><span class="toc-number">1.</span> <span class="toc-text">Git 简介：从入门到精通</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Git%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">什么是 Git？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-%E7%9A%84%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">1.2.</span> <span class="toc-text">Git 的核心概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-number">1.3.</span> <span class="toc-text">Git 基本操作</span></a></li></ol></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2024/02/02/hexo/">← 下一篇 hexo</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2024/02/02/node-js%E4%BB%8B%E7%BB%8D/">node.js介绍 上一篇 →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="回到顶部" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" onClick="tocControl.change()" title="文章目录"><span class="tocBtnIconBar"></span><span class="tocBtnIconBar"></span><span class="tocBtnIconBar"></span></a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="切换主题"></a><a onclick="BgmControl()"><svg id="bgm-control" viewBox="0 0 30 34" fill="#18d1ff" style="width: 24px; transition: transform .3s;margin-top: 4px"><path d="M25.998 23.422V11.29h3.999v12.132h-3.999zM19.497 6.234h4.001v22.243h-4.001V6.234zM12.998.867h4v32.978h-4V.867zm-6.5 5.367h4.001v22.243H6.498V6.234zm-6.5 5.056h4v12.132h-4V11.29z"></path></svg><audio id="bgm" src="/audio/bgm.mp3" autoplay loop crossorigin="anonymous"> </audio></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo" style="margin:0;border-radius:0;"></a><h1 id="Dr"><a href="/">周一凡</a></h1><div id="description"><p></p></div><div id="social-links"><a class="social" target="_blank" rel="noopener" href="https://github.com/6078HITHRDAY"><i class="fab fa-github" alt="GitHub"></i></a><a class="social" href="mailto:me@myflycat.cn"><i class="fa fa-envelope" alt="E-Mail"></i></a></div></div><div id="aside-block"><div id="toc-div"><h1>目录</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Git-%E7%AE%80%E4%BB%8B%EF%BC%9A%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E7%B2%BE%E9%80%9A"><span class="toc-number">1.</span> <span class="toc-text">Git 简介：从入门到精通</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Git%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">什么是 Git？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-%E7%9A%84%E6%A0%B8%E5%BF%83%E6%A6%82%E5%BF%B5"><span class="toc-number">1.2.</span> <span class="toc-text">Git 的核心概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C"><span class="toc-number">1.3.</span> <span class="toc-text">Git 基本操作</span></a></li></ol></li></ol></div></div><footer><nobr>构建自 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> 使用主题 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> 主题作者 <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
